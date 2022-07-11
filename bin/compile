@@ -1,8 +1,8 @@
-echo "-----> Installing mdbtools 0.7.0"
+echo "-----> Installing mdbtools 1.0.0"
 cd $1
-curl https://s3.amazonaws.com/mdb-tools/mdbtools-0-7-0.tar.bz2 -s -O
+curl https://github.com/mdbtools/mdbtools/releases/download/v1.0.0/mdbtools-1.0.0.tar.gz -s -O -L
 mkdir -p vendor/mdbtools
-tar -C vendor/mdbtools -xvjf mdbtools-0-7-0.tar.bz2
+tar -C vendor/mdbtools -xvzf mdbtools-1.0.0.tar.gz
 
 build_dir=$1
 status "Setting PATH"
