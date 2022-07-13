@@ -1,2 +1,4 @@
 mdbtools-*.tar.gz
 vendor/
+
+.history
