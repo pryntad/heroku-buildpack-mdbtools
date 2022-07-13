@@ -3,5 +3,5 @@
 cat <<EOF
 ---
 config_vars:
-  PATH: "$PATH:/app/vendor/mdbtools/heroku-buildpack-mdbtools-0.8/compiled_files/src/util"
+  PATH: "$PATH:/app/vendor/mdbtools/heroku-buildpack-mdbtools-0.8/compiled_files"
 EOF

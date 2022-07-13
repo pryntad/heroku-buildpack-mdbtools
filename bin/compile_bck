@@ -11,7 +11,7 @@ tar -C vendor/mdbtools -xvzf mdbtools-1.0.0.tar.gz
 echo "-----> Compile mdbtools 1.0.0"
 cd vendor/mdbtools/mdbtools-1.0.0
 autoreconf -i -f 
-./configure --disable-man
+./configure --disable-man --no-recursion
 make
 make install
 
