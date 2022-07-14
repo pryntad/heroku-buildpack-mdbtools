@@ -17,7 +17,7 @@ old_library='libmdbodbcW.a'
 inherited_linker_flags=''
 
 # Libraries that this one depends upon.
-dependency_libs=' /app/vendor/mdbtools/heroku-buildpack-mdbtools-0.8/compiled_filesdbtools/heroku-buildpack-mdbtools-0.8/compiled_files/src/sql/libmdbsql.la /app/vendor/mdbtools/heroku-buildpack-mdbtools-0.8/compiled_files/src/libmdb/libmdb.la -L/usr/local//usr/local/lib -lodbcinst -lglib-2.0 -lintl'
+dependency_libs=' /tmp/mdbtools/src/sql/libmdbsql.la /tmp/mdbtools/src/libmdb/libmdb.la -L/usr/local//usr/local/lib -lodbcinst -lglib-2.0 -lintl'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''
@@ -39,4 +39,4 @@ dlpreopen=''
 
 # Directory that this library needs to be installed in:
 libdir='/usr/local/lib/odbc'
-relink_command="(cd /app/vendor/mdbtools/heroku-buildpack-mdbtools-0.8/compiled_files/src/odbc; /bin/sh \"/app/vendor/mdbtools/heroku-buildpack-mdbtools-0.8/compiled_files/libtool\"  --silent --tag CC --mode=relink gcc -I../../include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DHAVE_GLIB=1 -DHAVE_G_MEMDUP2=1 -I/usr/local/include -g -O2 -DSQL -Wall -Werror -avoid-version -export-symbols-regex \"^(SQL|ODBCINST)\" -Wl,-Bsymbolic-functions -Wl,--as-needed -o libmdbodbcW.la -rpath /usr/local/lib/odbc odbc.lo connectparams.lo getproperties.lo odbcw.lo ../libmdb/libmdb.la ../sql/libmdbsql.la -L/usr/local//usr/local/lib -lodbcinst -lglib-2.0 -lintl @inst_prefix_dir@)"
+relink_command="(cd /tmp/mdbtools/src/odbc; /bin/sh \"/tmp/mdbtools/libtool\"  --silent --tag CC --mode=relink gcc -I../../include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DHAVE_GLIB=1 -DHAVE_G_MEMDUP2=1 -I/usr/local/include -g -O2 -DSQL -Wall -Werror -avoid-version -export-symbols-regex \"^(SQL|ODBCINST)\" -Wl,-Bsymbolic-functions -Wl,--as-needed -o libmdbodbcW.la -rpath /usr/local/lib/odbc odbc.lo connectparams.lo getproperties.lo odbcw.lo ../libmdb/libmdb.la ../sql/libmdbsql.la -L/usr/local//usr/local/lib -lodbcinst -lglib-2.0 -lintl @inst_prefix_dir@)"

@@ -17,7 +17,7 @@ old_library='libmdbsql.a'
 inherited_linker_flags=''
 
 # Libraries that this one depends upon.
-dependency_libs=' /app/vendor/mdbtools/heroku-buildpack-mdbtools-0.8/compiled_filesdbtools/heroku-buildpack-mdbtools-0.8/compiled_files/src/libmdb/libmdb.la -lglib-2.0 -lintl'
+dependency_libs=' /tmp/mdbtools/src/libmdb/libmdb.la -lglib-2.0 -lintl'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''
@@ -39,4 +39,4 @@ dlpreopen=''
 
 # Directory that this library needs to be installed in:
 libdir='/usr/local/lib'
-relink_command="(cd /app/vendor/mdbtools/heroku-buildpack-mdbtools-0.8/compiled_files/src/sql; /bin/sh \"/app/vendor/mdbtools/heroku-buildpack-mdbtools-0.8/compiled_files/libtool\"  --silent --tag CC --mode=relink gcc -I../../include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DHAVE_GLIB=1 -DHAVE_G_MEMDUP2=1 -g -O2 -DSQL -Wall -Werror -version-info 4:0:1 -export-symbols-regex \"^mdb_sql_\" -Wl,--as-needed -o libmdbsql.la -rpath /usr/local/lib mdbsql.lo parser.lo lexer.lo ../libmdb/libmdb.la -lglib-2.0 -lintl @inst_prefix_dir@)"
+relink_command="(cd /tmp/mdbtools/src/sql; /bin/sh \"/tmp/mdbtools/libtool\"  --silent --tag CC --mode=relink gcc -I../../include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DHAVE_GLIB=1 -DHAVE_G_MEMDUP2=1 -g -O2 -DSQL -Wall -Werror -version-info 4:0:1 -export-symbols-regex \"^mdb_sql_\" -Wl,--as-needed -o libmdbsql.la -rpath /usr/local/lib mdbsql.lo parser.lo lexer.lo ../libmdb/libmdb.la -lglib-2.0 -lintl @inst_prefix_dir@)"
