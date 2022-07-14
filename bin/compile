@@ -10,10 +10,9 @@ tar -C vendor/mdbtools -xvzf mdbtools-1.0.0.tar.gz
 # Compile mdbtools
 echo "-----> Compile mdbtools 1.0.0"
 cd vendor/mdbtools/mdbtools-1.0.0
-autoreconf -i -f 
-./configure --disable-man
+./configure --prefix=$(pwd) --disable-man
 make
-sudo make install
+make install
 
 # echo "-----> Adjust \$PATH"
 # cd $1

@@ -20,5 +20,5 @@ cd $1
 build_dir=$1
 # status "Setting PATH"
 mkdir -p $build_dir/.profile.d
-echo "export PATH=\"\$HOME/vendor/mdbtools/heroku-buildpack-mdbtools-0.8/compiled_files/src/util:\$PATH\"" > $build_dir/.profile.d/mdbtools.sh
+echo "export PATH=\"\$HOME/vendor/mdbtools/v0.8/compiled_files/src/util:\$PATH\"" > $build_dir/.profile.d/mdbtools.sh
 
