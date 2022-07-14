@@ -14,6 +14,8 @@ cd vendor/mdbtools/mdbtools-1.0.0
 make
 make install
 
+/sbin/ldconfig
+
 echo "-----> Adjust \$PATH"
 cd $1
 build_dir=$1
