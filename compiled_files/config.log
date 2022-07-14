@@ -1695,7 +1695,7 @@ configure:19014: result: yes
 configure:19020: checking for reallocf
 configure:19020: gcc -o conftest -g -O2   conftest.c  >&5
 /usr/lib/gcc/x86_64-alpine-linux-musl/11.2.1/../../../../x86_64-alpine-linux-musl/bin/ld: /tmp/ccIPdOfN.o: in function `main':
-/app/vendor/mdbtools/heroku-buildpack-mdbtools-0.8/compiled_files/conftest.c:76: undefined reference to `reallocf'
+/tmp/mdbtools/conftest.c:76: undefined reference to `reallocf'
 collect2: error: ld returned 1 exit status
 configure:19020: $? = 1
 configure: failed program was:
@@ -1782,7 +1782,7 @@ configure:19020: result: no
 configure:19026: checking for wcstombs_l
 configure:19026: gcc -o conftest -g -O2   conftest.c  >&5
 /usr/lib/gcc/x86_64-alpine-linux-musl/11.2.1/../../../../x86_64-alpine-linux-musl/bin/ld: /tmp/cckGgjId.o: in function `main':
-/app/vendor/mdbtools/heroku-buildpack-mdbtools-0.8/compiled_files/conftest.c:76: undefined reference to `wcstombs_l'
+/tmp/mdbtools/conftest.c:76: undefined reference to `wcstombs_l'
 collect2: error: ld returned 1 exit status
 configure:19026: $? = 1
 configure: failed program was:
@@ -1869,7 +1869,7 @@ configure:19026: result: no
 configure:19032: checking for mbstowcs_l
 configure:19032: gcc -o conftest -g -O2   conftest.c  >&5
 /usr/lib/gcc/x86_64-alpine-linux-musl/11.2.1/../../../../x86_64-alpine-linux-musl/bin/ld: /tmp/ccLOLbAd.o: in function `main':
-/app/vendor/mdbtools/heroku-buildpack-mdbtools-0.8/compiled_files/conftest.c:76: undefined reference to `mbstowcs_l'
+/tmp/mdbtools/conftest.c:76: undefined reference to `mbstowcs_l'
 collect2: error: ld returned 1 exit status
 configure:19032: $? = 1
 configure: failed program was:
@@ -1960,7 +1960,7 @@ configure:19038: result: yes
 configure:19044: checking for vasnprintf
 configure:19044: gcc -o conftest -g -O2   conftest.c  >&5
 /usr/lib/gcc/x86_64-alpine-linux-musl/11.2.1/../../../../x86_64-alpine-linux-musl/bin/ld: /tmp/ccCjNnCp.o: in function `main':
-/app/vendor/mdbtools/heroku-buildpack-mdbtools-0.8/compiled_files/conftest.c:77: undefined reference to `vasnprintf'
+/tmp/mdbtools/conftest.c:77: undefined reference to `vasnprintf'
 collect2: error: ld returned 1 exit status
 configure:19044: $? = 1
 configure: failed program was:
@@ -2690,7 +2690,7 @@ pkg_cv_GLIB_LIBS='-lglib-2.0 -lintl '
 ## Output variables. ##
 ## ----------------- ##
 
-ACLOCAL='${SHELL} '\''/app/vendor/mdbtools/heroku-buildpack-mdbtools-0.8/compiled_files/build-aux/missing'\'' aclocal-1.16'
+ACLOCAL='${SHELL} '\''/tmp/mdbtools/build-aux/missing'\'' aclocal-1.16'
 AMDEPBACKSLASH='\'
 AMDEP_FALSE='#'
 AMDEP_TRUE=''
@@ -2701,9 +2701,9 @@ AM_DEFAULT_VERBOSITY='0'
 AM_V='$(V)'
 AR='ar'
 AS='as'
-AUTOCONF='${SHELL} '\''/app/vendor/mdbtools/heroku-buildpack-mdbtools-0.8/compiled_files/build-aux/missing'\'' autoconf'
-AUTOHEADER='${SHELL} '\''/app/vendor/mdbtools/heroku-buildpack-mdbtools-0.8/compiled_files/build-aux/missing'\'' autoheader'
-AUTOMAKE='${SHELL} '\''/app/vendor/mdbtools/heroku-buildpack-mdbtools-0.8/compiled_files/build-aux/missing'\'' automake-1.16'
+AUTOCONF='${SHELL} '\''/tmp/mdbtools/build-aux/missing'\'' autoconf'
+AUTOHEADER='${SHELL} '\''/tmp/mdbtools/build-aux/missing'\'' autoheader'
+AUTOMAKE='${SHELL} '\''/tmp/mdbtools/build-aux/missing'\'' automake-1.16'
 AWK='gawk'
 BASH_COMPLETION_CFLAGS=''
 BASH_COMPLETION_DIR='${datarootdir}/bash-completion/completions'
@@ -2773,7 +2773,7 @@ LT_SYS_LIBRARY_PATH=''
 MAINT=''
 MAINTAINER_MODE_FALSE='#'
 MAINTAINER_MODE_TRUE=''
-MAKEINFO='${SHELL} '\''/app/vendor/mdbtools/heroku-buildpack-mdbtools-0.8/compiled_files/build-aux/missing'\'' makeinfo'
+MAKEINFO='${SHELL} '\''/tmp/mdbtools/build-aux/missing'\'' makeinfo'
 MANIFEST_TOOL=':'
 MKDIR_P='./build-aux/install-sh -c -d'
 NM='/usr/bin/nm -B'
@@ -2847,7 +2847,7 @@ host_vendor='pc'
 htmldir='${docdir}'
 includedir='${prefix}/include'
 infodir='${datarootdir}/info'
-install_sh='${SHELL} /app/vendor/mdbtools/heroku-buildpack-mdbtools-0.8/compiled_files/build-aux/install-sh'
+install_sh='${SHELL} /tmp/mdbtools/build-aux/install-sh'
 libdir='${exec_prefix}/lib'
 libexecdir='${exec_prefix}/libexec'
 localedir='${datarootdir}/locale'
